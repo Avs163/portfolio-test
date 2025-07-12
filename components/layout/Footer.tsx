@@ -18,7 +18,7 @@ const Footer = () => {
             <h3>
               <Link
                 href="/"
-                className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-80 transition-opacity duration-300"
+                className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-600 hover:opacity-80 transition-opacity duration-300"
               >
                 {profile.name}
               </Link>

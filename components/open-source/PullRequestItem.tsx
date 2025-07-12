@@ -17,7 +17,7 @@ const PullRequestItem = ({ pr, index }: { pr: PullRequest; index: number; }) => 
   const colors = [
     'bg-green-50/10',
     'bg-pink-50/10',
-    'bg-purple-50/10',
+    'bg-green-50/10',
     'bg-blue-50/10'
   ];
 

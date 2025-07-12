@@ -22,11 +22,11 @@ export const globeConfig = {
 };
 
 export const colors = [
-    "#8b5cf6", // Purple
-    "#6366f1", // Indigo
-    "#3b82f6", // Blue
-    "#06b6d4", // Cyan
     "#10b981", // Emerald
+    "#059669", // Green
+    "#06b6d4", // Cyan
+    "#14b8a6", // Teal
+    "#22c55e", // Lime Green
 ];
 
 export const globArcs = [

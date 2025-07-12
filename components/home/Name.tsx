@@ -13,7 +13,7 @@ const Name = () => {
             variants={containerVariants}
             className={`font-black  lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]`}
         >
-            I&apos;m <span className="text-violet-600">{profile.name}</span>
+            I&apos;m <span className="text-green-600">{profile.name}</span>
         </motion.h1>
     );
 };

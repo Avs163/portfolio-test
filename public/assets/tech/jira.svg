@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <defs>
+    <linearGradient id="jira-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0052CC"/>
+      <stop offset="100%" style="stop-color:#2684FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M11.571 11.513H0a5.218 5.218 0 005.232 5.232h3.161v3.163a5.218 5.218 0 005.232-5.232l-2.054-2.054v-1.109z" fill="url(#jira-blue)"/>
+  <path d="M20.799 2.284H9.228a5.218 5.218 0 005.232 5.232h3.161v3.163a5.218 5.218 0 005.232-5.232L20.8 3.393V2.284z" fill="#2684FF"/>
+  <path d="M16.285 6.898H4.714a5.218 5.218 0 005.232 5.232h3.161v3.163a5.218 5.218 0 005.232-5.232l-2.054-2.054V6.898z" fill="url(#jira-blue)"/>
+</svg>

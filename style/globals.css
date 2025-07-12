@@ -28,8 +28,8 @@
   --chart-3: 30 80% 55%;
   --chart-4: 280 65% 60%;
   --chart-5: 340 75% 55%;
-  --blue-start: #3b82f6;
-  --purple-end: #8b5cf6;
+  --blue-start: #10b981;
+  --green-end: #059669;
 }
 
 @keyframes accordion-down {
@@ -74,8 +74,8 @@
   }
 }
 
-.bg-blue-purple {
-  background-image: linear-gradient(to right, var(--blue-start), var(--purple-end));
+.bg-blue-green {
+  background-image: linear-gradient(to right, var(--blue-start), var(--green-end));
 }
 
 .custom-shadow {
@@ -83,7 +83,7 @@
 }
 
 .custom-shadow:hover {
-  box-shadow: 4px 3px 7px 3px rgba(105, 3, 121, 0.25);
+  box-shadow: 4px 3px 7px 3px rgba(5, 150, 105, 0.25);
 }
 
 

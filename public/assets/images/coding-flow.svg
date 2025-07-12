@@ -1,0 +1,83 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="90" fill="url(#flowGrad)" opacity="0.1"/>
+  
+  <!-- Central Code Editor -->
+  <rect x="60" y="70" width="80" height="60" rx="6" fill="url(#codeGrad)" opacity="0.8"/>
+  <rect x="64" y="74" width="72" height="52" rx="3" fill="#0a0a0a" opacity="0.9"/>
+  
+  <!-- Code Editor Header -->
+  <rect x="64" y="74" width="72" height="10" rx="3" fill="url(#codeGrad)" opacity="0.4"/>
+  <circle cx="70" cy="79" r="1.5" fill="#ff5f56"/>
+  <circle cx="76" cy="79" r="1.5" fill="#ffbd2e"/>
+  <circle cx="82" cy="79" r="1.5" fill="#27ca3f"/>
+  
+  <!-- Code Lines with Syntax Highlighting -->
+  <rect x="68" y="88" width="8" height="2" rx="1" fill="#10b981"/>
+  <rect x="78" y="88" width="20" height="2" rx="1" fill="#14b8a6" opacity="0.7"/>
+  <rect x="100" y="88" width="15" height="2" rx="1" fill="#059669"/>
+  
+  <rect x="72" y="94" width="25" height="2" rx="1" fill="#14b8a6"/>
+  <rect x="99" y="94" width="10" height="2" rx="1" fill="#10b981" opacity="0.8"/>
+  <rect x="111" y="94" width="18" height="2" rx="1" fill="#059669" opacity="0.6"/>
+  
+  <rect x="68" y="100" width="12" height="2" rx="1" fill="#059669"/>
+  <rect x="82" y="100" width="30" height="2" rx="1" fill="#10b981" opacity="0.9"/>
+  <rect x="114" y="100" width="8" height="2" rx="1" fill="#14b8a6"/>
+  
+  <rect x="72" y="106" width="20" height="2" rx="1" fill="#14b8a6" opacity="0.8"/>
+  <rect x="94" y="106" width="15" height="2" rx="1" fill="#10b981"/>
+  <rect x="111" y="106" width="12" height="2" rx="1" fill="#059669" opacity="0.7"/>
+  
+  <rect x="68" y="112" width="35" height="2" rx="1" fill="#10b981" opacity="0.6"/>
+  <rect x="105" y="112" width="20" height="2" rx="1" fill="#14b8a6"/>
+  
+  <rect x="72" y="118" width="15" height="2" rx="1" fill="#059669" opacity="0.8"/>
+  <rect x="89" y="118" width="25" height="2" rx="1" fill="#10b981" opacity="0.7"/>
+  
+  <!-- Git Flow Visualization -->
+  <circle cx="30" cy="50" r="8" fill="url(#codeGrad)" opacity="0.7"/>
+  <circle cx="50" cy="40" r="6" fill="url(#flowGrad)" opacity="0.8"/>
+  <circle cx="70" cy="45" r="5" fill="url(#codeGrad)" opacity="0.6"/>
+  
+  <!-- Connecting Lines -->
+  <path d="M38 50 Q45 45 50 40" stroke="url(#codeGrad)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M56 40 Q63 42 70 45" stroke="url(#flowGrad)" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Output/Deploy Flow -->
+  <circle cx="170" cy="60" r="7" fill="url(#flowGrad)" opacity="0.8"/>
+  <circle cx="150" cy="50" r="5" fill="url(#codeGrad)" opacity="0.7"/>
+  <circle cx="130" cy="55" r="4" fill="url(#flowGrad)" opacity="0.6"/>
+  
+  <path d="M134 55 Q142 52 150 50" stroke="url(#codeGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M155 50 Q162 55 170 60" stroke="url(#flowGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Data Flow Indicators -->
+  <rect x="20" y="140" width="10" height="3" rx="1.5" fill="url(#codeGrad)" opacity="0.7">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0; 20,0; 40,0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="150" y="160" width="8" height="3" rx="1.5" fill="url(#flowGrad)" opacity="0.7">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0; -15,0; -30,0" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Function/Method Brackets -->
+  <path d="M40 160 L35 165 L40 170" stroke="url(#codeGrad)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M160 160 L165 165 L160 170" stroke="url(#flowGrad)" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Floating Code Elements -->
+  <rect x="25" y="100" width="8" height="8" rx="2" fill="url(#codeGrad)" opacity="0.5" transform="rotate(30 29 104)"/>
+  <circle cx="175" cy="130" r="4" fill="url(#flowGrad)" opacity="0.6"/>
+  <rect x="160" y="25" width="6" height="6" rx="1" fill="url(#codeGrad)" opacity="0.4" transform="rotate(45 163 28)"/>
+</svg>

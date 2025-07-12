@@ -28,16 +28,16 @@ const SocialLink = ({
             onMouseLeave={() => setIsHovered(false)}
         >
             <span className="mr-2 font-normal text-sm md:text-base text-white">
-                <span className={`hidden md:inline ${isHovered ? 'text-purple-end' : ''}`}>{lgLabel}</span>
-                <span className={`md:hidden ${isHovered ? 'text-purple-end' : ''}`}>{smLabel}</span>
+                <span className={`hidden md:inline ${isHovered ? 'text-green-400' : ''}`}>{lgLabel}</span>
+                <span className={`md:hidden ${isHovered ? 'text-green-400' : ''}`}>{smLabel}</span>
             </span>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 256"
                 width={30}
                 height={16}
-                fill={isHovered ? '#8B5CF6' : 'white'}
-                className={`w-4 ml-1 h-4 ${isHovered ? 'text-purple-end' : 'text-white'}`}
+                fill={isHovered ? '#10B981' : 'white'}
+                className={`w-4 ml-1 h-4 ${isHovered ? 'text-green-400' : 'text-white'}`}
                 animate={{ rotate: isHovered ? 45 : 0 }}
                 transition={{ duration: 0.2 }}
             >

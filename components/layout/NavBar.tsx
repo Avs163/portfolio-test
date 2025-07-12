@@ -24,7 +24,7 @@ const NavBar = () => {
                             <Link key={item.href} href={item.href} passHref>
                                 <motion.p
                                     className={`text-sm font-medium px-3 py-2 rounded-md ${isActive(item.href)
-                                        ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600'
+                                        ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-600'
                                         : 'text-white hover:text-slate-600'}`}
                                     whileHover={{
                                         scale: 1.05,
@@ -50,7 +50,7 @@ const NavBar = () => {
                                     y: isOpen ? 0 : -4,
                                 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute w-8 h-[3px] bg-blue-purple"
+                                className="absolute w-8 h-[3px] bg-blue-green"
                             />
                             <motion.span
                                 animate={{
@@ -58,7 +58,7 @@ const NavBar = () => {
                                     y: isOpen ? 0 : 4,
                                 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute w-8 h-[3px] bg-blue-purple"
+                                className="absolute w-8 h-[3px] bg-blue-green"
                             />
                         </div>
                     </button>

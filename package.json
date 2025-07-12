@@ -1,19 +1,19 @@
 {
-  "name": "protfolio",
+  "name": "mital-sapkale-portfolio",
   "version": "0.1.0",
   "private": false,
-  "displayName": "SinanPtm Portfolio",
+  "displayName": "Mital Sapkale Portfolio",
   "maintainers": [
     {
-      "name": "sinanptm",
-      "email": "sinan@codecords.com",
-      "url": "https://github.com/sinanptm"
+      "name": "mitalrs",
+      "email": "mitalsapkale1999@gmail.com",
+      "url": "https://github.com/mitalrs"
     }
   ],
   "author": {
-    "name": "sinanptm",
-    "email": "sinan@codecorde.com",
-    "url": "https://github.com/sinanptm"
+    "name": "mitalrs",
+    "email": "mitalsapkale1999@gmail.com",
+    "url": "https://github.com/mitalrs"
   },
   "scripts": {
     "dev": "next dev --turbo",

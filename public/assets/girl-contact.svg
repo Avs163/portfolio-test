@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="#f0fdf4" opacity="0.3"/>
+  
+  <!-- Hair -->
+  <path d="M200 60c-50 0-90 35-90 85v20c0 15 5 25 15 35-5 10-8 25-8 40 0 30 15 55 35 70 15 10 35 15 48 15s33-5 48-15c20-15 35-40 35-70 0-15-3-30-8-40 10-10 15-20 15-35v-20c0-50-40-85-90-85z" fill="#8B4513"/>
+  
+  <!-- Face -->
+  <ellipse cx="200" cy="180" rx="45" ry="55" fill="#FDBCB4"/>
+  
+  <!-- Hair strands -->
+  <path d="M155 120c-5-8-8-15-8-25 0-15 10-25 25-25 10 0 18 5 22 12" fill="#654321"/>
+  <path d="M245 120c5-8 8-15 8-25 0-15-10-25-25-25-10 0-18 5-22 12" fill="#654321"/>
+  <path d="M200 85c-8-5-15-8-25-8-15 0-25 10-25 25 0 10 5 18 12 22" fill="#654321"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="185" cy="170" rx="6" ry="8" fill="#2D3748"/>
+  <ellipse cx="215" cy="170" rx="6" ry="8" fill="#2D3748"/>
+  <ellipse cx="185" cy="168" rx="2" ry="3" fill="#FFFFFF"/>
+  <ellipse cx="215" cy="168" rx="2" ry="3" fill="#FFFFFF"/>
+  
+  <!-- Eyebrows -->
+  <path d="M178 158c6-2 12-2 18 0" stroke="#654321" stroke-width="2" fill="none"/>
+  <path d="M208 158c6-2 12-2 18 0" stroke="#654321" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <ellipse cx="200" cy="185" rx="2" ry="4" fill="#F4A261"/>
+  
+  <!-- Mouth -->
+  <path d="M192 200c4 4 8 6 16 0" stroke="#E63946" stroke-width="2" fill="none"/>
+  
+  <!-- Neck -->
+  <rect x="185" y="225" width="30" height="25" fill="#FDBCB4"/>
+  
+  <!-- Body/Shoulders -->
+  <ellipse cx="200" cy="280" rx="60" ry="40" fill="#10B981"/>
+  
+  <!-- Arms -->
+  <ellipse cx="130" cy="290" rx="15" ry="35" fill="#FDBCB4"/>
+  <ellipse cx="270" cy="290" rx="15" ry="35" fill="#FDBCB4"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="130" cy="275" rx="18" ry="25" fill="#059669"/>
+  <ellipse cx="270" cy="275" rx="18" ry="25" fill="#059669"/>
+  
+  <!-- Hands -->
+  <circle cx="130" cy="325" r="12" fill="#FDBCB4"/>
+  <circle cx="270" cy="325" r="12" fill="#FDBCB4"/>
+  
+  <!-- Hair accessories -->
+  <circle cx="170" cy="140" r="4" fill="#E11D48"/>
+  <circle cx="230" cy="140" r="4" fill="#E11D48"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="100" r="3" fill="#10B981" opacity="0.6"/>
+  <circle cx="320" cy="120" r="4" fill="#059669" opacity="0.5"/>
+  <circle cx="90" cy="300" r="2" fill="#34D399" opacity="0.7"/>
+  <circle cx="310" cy="280" r="3" fill="#6EE7B7" opacity="0.6"/>
+  
+  <!-- Background pattern -->
+  <path d="M50 350c20-10 40-15 60-10s35 15 50 10" stroke="#10B981" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M250 350c20-10 40-15 60-10s35 15 50 10" stroke="#059669" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>

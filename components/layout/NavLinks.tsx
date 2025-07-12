@@ -19,7 +19,7 @@ const NavLink = ({
         <motion.span
             className={`text-6xl sm:text-7xl lg:text-8xl tracking-tighter font-source-code-pro
             ${isActive
-                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600'
+                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-600'
                     : 'text-white hover:text-slate-600'} 
             transition-all duration-300`}
             initial={{ opacity: 0, x: 50 }}

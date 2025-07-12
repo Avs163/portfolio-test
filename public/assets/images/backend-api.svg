@@ -1,0 +1,52 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="85" fill="url(#bgGrad)" opacity="0.1"/>
+  
+  <!-- Central Server -->
+  <rect x="85" y="75" width="30" height="50" rx="4" fill="url(#serverGrad)" opacity="0.8"/>
+  <rect x="88" y="80" width="24" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+  <rect x="88" y="92" width="24" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+  <rect x="88" y="104" width="24" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+  <rect x="88" y="116" width="24" height="6" rx="2" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- API Endpoints (circles around server) -->
+  <circle cx="60" cy="60" r="8" fill="url(#serverGrad)" opacity="0.7"/>
+  <circle cx="140" cy="60" r="8" fill="url(#serverGrad)" opacity="0.7"/>
+  <circle cx="60" cy="140" r="8" fill="url(#serverGrad)" opacity="0.7"/>
+  <circle cx="140" cy="140" r="8" fill="url(#serverGrad)" opacity="0.7"/>
+  <circle cx="40" cy="100" r="6" fill="url(#serverGrad)" opacity="0.6"/>
+  <circle cx="160" cy="100" r="6" fill="url(#serverGrad)" opacity="0.6"/>
+  
+  <!-- Connection Lines -->
+  <path d="M68 68 L85 85" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  <path d="M132 68 L115 85" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  <path d="M68 132 L85 115" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  <path d="M132 132 L115 115" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  <path d="M46 100 L85 100" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  <path d="M154 100 L115 100" stroke="url(#serverGrad)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Data Flow Indicators -->
+  <rect x="25" y="95" width="8" height="3" rx="1.5" fill="url(#serverGrad)" opacity="0.6">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0; 15,0; 0,0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="170" y="95" width="8" height="3" rx="1.5" fill="url(#serverGrad)" opacity="0.6">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0; -15,0; 0,0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Database Symbol -->
+  <ellipse cx="100" cy="160" rx="15" ry="5" fill="url(#serverGrad)" opacity="0.6"/>
+  <rect x="85" y="155" width="30" height="10" fill="url(#serverGrad)" opacity="0.6"/>
+  <ellipse cx="100" cy="155" rx="15" ry="5" fill="url(#serverGrad)" opacity="0.8"/>
+  <path d="M100 150 L100 165" stroke="url(#serverGrad)" stroke-width="2" opacity="0.4"/>
+</svg>

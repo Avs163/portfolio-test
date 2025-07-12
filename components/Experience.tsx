@@ -27,7 +27,7 @@ const Experience = () => {
                         {/* Enhanced title with animated underline */}
                         <div className="relative inline-block">
                             <motion.h1
-                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-white via-violet-100 to-white"
+                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-white"
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },
                                     visible: {

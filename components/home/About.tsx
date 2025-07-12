@@ -27,8 +27,8 @@ const About = () => {
                             variants={imageVariants}
                         >
                             <Image
-                                src="/assets/images/sitting.svg"
-                                alt="Illustration of a developer sitting at a desk, coding with a laptop and books around"
+                                src="/assets/images/workspace.svg"
+                                alt="Modern workspace illustration with computer, code editor, and development environment"
                                 fill
                                 priority={false}
                                 sizes="(max-width: 768px) 2.5rem, (max-width: 1200px) 3.5rem, 2.5rem"
@@ -55,7 +55,7 @@ const About = () => {
                                 <Link href={profile.gitHub} prefetch={false}>
                                     <motion.div whileHover={buttonHover} variants={buttonVariants} whileTap={{ scale: 0.95 }}>
                                         <Button
-                                            className="flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white cursor-pointer"
+                                            className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white cursor-pointer"
                                             aria-label='Star me on github'
                                         >
                                             <Image

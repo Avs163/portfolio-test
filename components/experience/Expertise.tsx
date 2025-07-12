@@ -19,8 +19,8 @@ const Expertise = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
         >
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,0 C25,50 75,50 100,0 L100,100 L0,100 Z" fill="rgba(59, 130, 246, 0.1)" />
-                <path d="M0,100 C25,50 75,50 100,100" fill="none" stroke="rgba(59, 130, 246, 0.5)" strokeWidth="0.5" />
+                <path d="M0,0 C25,50 75,50 100,0 L100,100 L0,100 Z" fill="rgba(16, 185, 129, 0.1)" />
+                <path d="M0,100 C25,50 75,50 100,100" fill="none" stroke="rgba(16, 185, 129, 0.5)" strokeWidth="0.5" />
             </svg>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10">
                 {expertiseAreas.map((area, index) => (
@@ -31,7 +31,7 @@ const Expertise = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 * index }}
                     >
-                        <area.icon className="w-12 h-12 mb-2 text-blue-500" />
+                        <area.icon className="w-12 h-12 mb-2 text-green-500" />
                         <h3 className="text-lg font-semibold mb-1">{area.title}</h3>
                         <p className="text-sm text-gray-400">{area.description}</p>
                     </motion.div>

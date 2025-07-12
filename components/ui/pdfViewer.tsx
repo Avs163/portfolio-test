@@ -3,17 +3,23 @@
 import { useState, useEffect, useCallback } from "react";
 import dynamic from 'next/dynamic';
 
+// Import CSS files at the top level
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+
 const PDFViewer = dynamic(
   async () => {
     const pdfjsVersion = '3.11.174'; 
     
+    // Check if we're in browser environment
+    if (typeof window === 'undefined') {
+      const LoadingComponent = () => <div>Loading PDF viewer...</div>;
+      LoadingComponent.displayName = 'PDFViewerLoading';
+      return LoadingComponent;
+    }
+    
     const { Viewer, Worker } = await import('@react-pdf-viewer/core');
     const { defaultLayoutPlugin } = await import('@react-pdf-viewer/default-layout');
-    
-    // @ts-expect-error the css files exists
-    await import('@react-pdf-viewer/core/lib/styles/index.css');
-    // @ts-expect-error the css files exists
-    await import('@react-pdf-viewer/default-layout/lib/styles/index.css');
     
     const Component = ({ url }: { url: string }) => {
       const defaultLayoutPluginInstance = defaultLayoutPlugin();

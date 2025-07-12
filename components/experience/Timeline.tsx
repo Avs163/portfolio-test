@@ -69,7 +69,7 @@ export const Timeline = ({ data }: TimelineProps) => {
 
                 <div
                     style={{ height: height + "px" }}
-                    className="absolute left-4 sm:left-6 md:left-8 top-0 w-[2px] sm:w-[3px] bg-gradient-to-b from-transparent via-violet-600/30 to-transparent"
+                    className="absolute left-4 sm:left-6 md:left-8 top-0 w-[2px] sm:w-[3px] bg-gradient-to-b from-transparent via-green-600/30 to-transparent"
                     aria-hidden="true"
                 >
                     <motion.div
@@ -77,13 +77,13 @@ export const Timeline = ({ data }: TimelineProps) => {
                             height: heightTransform,
                             opacity: opacityTransform,
                         }}
-                        className="absolute inset-x-0 top-0 w-[3px] sm:w-[3px] bg-gradient-to-t from-violet-600 via-violet-500 to-transparent rounded-full shadow-[0_0_8px_rgba(139,92,246,0.6)]"
+                        className="absolute inset-x-0 top-0 w-[3px] sm:w-[3px] bg-gradient-to-t from-green-600 via-green-500 to-transparent rounded-full shadow-[0_0_8px_rgba(16,185,129,0.6)]"
                     />
 
                     {[...Array(isMobile ? 12 : 8)].map((_, i) => (
                         <motion.div
                             key={i}
-                            className="absolute w-2 h-2 sm:w-2 sm:h-2 rounded-full bg-violet-500/80 left-1/2 -translate-x-1/2 shadow-lg shadow-violet-500/50"
+                            className="absolute w-2 h-2 sm:w-2 sm:h-2 rounded-full bg-green-500/80 left-1/2 -translate-x-1/2 shadow-lg shadow-green-500/50"
                             style={{
                                 top: `${(i + 1) * (isMobile ? 8 : 12)}%`,
                                 opacity: opacityTransform,
@@ -93,9 +93,9 @@ export const Timeline = ({ data }: TimelineProps) => {
                                 scale: [1, isMobile ? 1.5 : 1.3, 1],
                                 opacity: [0.5, 0.9, 0.5],
                                 boxShadow: [
-                                    "0 0 3px rgba(139, 92, 246, 0.3)",
-                                    "0 0 15px rgba(139, 92, 246, 0.6)",
-                                    "0 0 3px rgba(139, 92, 246, 0.3)",
+                                    "0 0 3px rgba(16, 185, 129, 0.3)",
+                                    "0 0 15px rgba(16, 185, 129, 0.6)",
+                                    "0 0 3px rgba(16, 185, 129, 0.3)",
                                 ],
                             }}
                             transition={{
@@ -110,16 +110,16 @@ export const Timeline = ({ data }: TimelineProps) => {
                     {data.map((_, idx) => (
                         <motion.div
                             key={`node-${idx}`}
-                            className="absolute w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-violet-500/50 left-1/2 -translate-x-1/2 shadow-lg shadow-violet-500/50 z-10"
+                            className="absolute w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-green-500/50 left-1/2 -translate-x-1/2 shadow-lg shadow-green-500/50 z-10"
                             style={{
                                 top: `${(idx + 0.5) * (100 / data.length)}%`,
                                 opacity: opacityTransform,
                             }}
                             animate={{
                                 boxShadow: [
-                                    "0 0 5px rgba(139, 92, 246, 0.4)",
-                                    "0 0 20px rgba(139, 92, 246, 0.8)",
-                                    "0 0 5px rgba(139, 92, 246, 0.4)",
+                                    "0 0 5px rgba(16, 185, 129, 0.4)",
+                                    "0 0 20px rgba(16, 185, 129, 0.8)",
+                                    "0 0 5px rgba(16, 185, 129, 0.4)",
                                 ],
                                 scale: isMobile ? [1, 1.1, 1] : [1, 1, 1],
                             }}
@@ -133,7 +133,7 @@ export const Timeline = ({ data }: TimelineProps) => {
                     ))}
 
                     <motion.div
-                        className="absolute w-10 h-10 sm:w-8 sm:h-8 rounded-full bg-violet-500/30 left-1/2 -translate-x-1/2 blur-md"
+                        className="absolute w-10 h-10 sm:w-8 sm:h-8 rounded-full bg-green-500/30 left-1/2 -translate-x-1/2 blur-md"
                         style={{
                             top: heightTransform,
                             opacity: opacityTransform,
@@ -158,7 +158,7 @@ export const Timeline = ({ data }: TimelineProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.5 }}
             >
-                <div className="w-24 sm:w-20 h-1 bg-gradient-to-r from-transparent via-violet-500 to-transparent rounded-full shadow-[0_0_10px_rgba(139,92,246,0.5)]" />
+                <div className="w-24 sm:w-20 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
             </motion.div>
         </motion.div>
     );

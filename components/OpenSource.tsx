@@ -62,8 +62,8 @@ const OpenSource = () => {
                     <div className="grid lg:grid-cols-2 gap-8 items-center">
                         <motion.div variants={imageVariants} className="relative aspect-square w-full max-w-xl mx-auto">
                             <Image
-                                src="/assets/images/coding.svg"
-                                alt="Illustration of a developer coding, representing open source collaboration"
+                                src="/assets/images/coding-flow.svg"
+                                alt="Abstract illustration of coding workflow and development process"
                                 fill
                                 className="object-contain"
                                 loading="lazy"

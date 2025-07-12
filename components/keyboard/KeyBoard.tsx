@@ -97,8 +97,8 @@ const Keyboard = ({ typedString = "", setTypedString, label }: KeyboardProps) =>
       <div className={cn(
         "absolute -top-8 left-1/2 transform -translate-x-1/2 px-3 py-1 rounded-t-md text-xs font-mono transition-all duration-300",
         isWindowFocused
-          ? "bg-gradient-to-r from-purple-900/80 via-indigo-900/80 to-purple-900/80 text-white border-t border-x border-purple-500/50"
-          : "bg-gradient-to-r from-purple-900/40 via-indigo-900/40 to-purple-900/40 text-white/70 border-t border-x border-purple-500/30"
+          ? "bg-gradient-to-r from-green-900/80 via-emerald-900/80 to-green-900/80 text-white border-t border-x border-green-500/50"
+          : "bg-gradient-to-r from-green-900/40 via-emerald-900/40 to-green-900/40 text-white/70 border-t border-x border-green-500/30"
       )}>
         <div className="flex items-center gap-2">
           <input className="focus-visible:ring-0 active:ring-0 ring-0 outline-none" value={typedString.trim()} placeholder={label} onChange={(e) => setTypedString(e.target.value)} />
@@ -110,8 +110,8 @@ const Keyboard = ({ typedString = "", setTypedString, label }: KeyboardProps) =>
         className={cn(
           "rounded-xl mx-auto p-3 bg-black/90 border transition-all duration-300",
           isWindowFocused
-            ? "border-purple-500/30 keyboard-glow"
-            : "border-purple-500/20 keyboard-glow-unfocused opacity-90"
+            ? "border-green-500/30 keyboard-glow"
+            : "border-green-500/20 keyboard-glow-unfocused opacity-90"
         )}
         style={keyboardGlowStyle}
       >

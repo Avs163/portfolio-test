@@ -1,33 +1,32 @@
 import { ThingsIDo } from "@/types";
-import { baseUrlTech } from "./techData";
+import { baseUrlTech } from "@/constants/techData";
 
 export const profile = {
-  summary: ` Self-taught MERN stack developer passionate about building scalable, efficient applications. 
-              Fascinated by technology from a young age, I've continuously expanded my expertise across 
-              various tools and frameworks. Committed to improving my skills, writing better code, and 
-              delivering impactful solutions.`,
-  gitHub: "https://github.com/sinanptm/portfolio",
-  name: "Muhammed Sinan",
-  title: "Full Stack Developer",
-  gitHubUserName: "sinanptm",
-  xUserName: "sinanptm",
-  linkedin: 'https://www.linkedin.com/in/sinanptm',
-  x: 'https://x.com/sinanptm',
-  instagram: "https://www.instagram.com/si_an_z"
+  summary: ` Frontend Developer with expertise in React, TypeScript, and modern web technologies. 
+              Experienced in building high-performance UI components and optimizing user experiences. 
+              Passionate about creating scalable applications and contributing to innovative projects 
+              across diverse industries including blockchain and SaaS platforms.`,
+  gitHub: "https://github.com/mitalrs",
+  name: "Mital Sapkale",
+  title: "Frontend Developer",
+  gitHubUserName: "mitalrs",
+  xUserName: "mitalrs",
+  linkedin: 'https://www.linkedin.com/in/mital-sapkale',
+  x: 'https://x.com/mitalrs',
+  instagram: "https://www.instagram.com/mitalrs"
 };
-export const hostedUrl = "https://muhammedsinan.space";
-export const canonicalUrl = "https://muhammedsinan.space";
+export const hostedUrl = "https://mital-sapkale-portfolio.vercel.app";
+export const canonicalUrl = "https://mital-sapkale-portfolio.vercel.app";
 
 export const TYPEWRITER_WORDS = [
   { text: "I" },
-  { text: "Build" },
-  { text: "Innovative" },
-  { text: "Digital" },
-  { text: "Solutions" },
+  { text: "Create" },
+  { text: "High-Performance" },
+  { text: "User" },
+  { text: "Interfaces" },
   { text: "With" },
-  { text: "Precision" },
-  { text: "And" },
-  { text: "Passion" },
+  { text: "Modern" },
+  { text: "Technologies" },
   { text: "!" }
 ];
 
@@ -36,37 +35,31 @@ export const socialMediaLinks = [
   {
     title: 'LinkedIn',
     icon: '/assets/social/linkedin.svg',
-    href: 'https://www.linkedin.com/in/sinanptm',
+    href: 'https://www.linkedin.com/in/mital-sapkale',
     smLabel: 'LN',
   },
   {
     title: 'GitHub',
     icon: '/assets/social/github.svg',
-    href: 'https://github.com/sinanptm',
+    href: 'https://github.com/mitalrs',
     smLabel: 'GH',
-  },
-  {
-    title: 'Stack Overflow',
-    icon: '/assets/social/stackoverflow.png',
-    href: 'https://stackoverflow.com/users/25472984/sinan',
-    smLabel: 'SO',
-  },
-  {
-    title: 'LeetCode',
-    icon: '/assets/social/leetcode.jpg',
-    href: 'https://leetcode.com/u/Sinan_z',
-    smLabel: 'LC',
   },
   {
     title: 'Email',
     icon: '/assets/social/email.svg',
-    href: 'mailto:sinan@codecords.com',
+    href: 'mailto:mitalsapkale1999@gmail.com',
     smLabel: 'EM',
+  },
+  {
+    title: 'Phone',
+    icon: '/assets/social/phone.svg',
+    href: 'tel:+917776850205',
+    smLabel: 'PH',
   },
   {
     title: 'Twitter',
     icon: '/assets/social/x.png',
-    href: 'https://x.com/sinanptm',
+    href: 'https://x.com/mitalrs',
     smLabel: 'TW',
   }
 ];
@@ -92,61 +85,61 @@ export const openSourceOrganizations = [
 
 export const thingsIDo: ThingsIDo[] = [
   {
-    name: "Full Stack Development",
-    image: "/assets/images/fullstack.svg",
+    name: "Frontend Development",
+    image: "/assets/images/frontend-dev.svg",
     tech: [
-      { name: "Node JS", url: `${baseUrlTech}/nodejs.svg` },
-      { name: "Express JS", url: `${baseUrlTech}/express.svg` },
       { name: "React JS", url: `${baseUrlTech}/react.svg` },
       { name: "Next JS", url: `${baseUrlTech}/nextjs.svg` },
-      { name: "Nest JS", url: `${baseUrlTech}/nestjs.svg` },
-      { name: "Expo", url: `${baseUrlTech}/expo.svg` },
       { name: "TypeScript", url: `${baseUrlTech}/typescript.svg` },
+      { name: "JavaScript", url: `${baseUrlTech}/javascript.svg` },
       { name: "Tailwind", url: `${baseUrlTech}/tailwind.svg` },
-      { name: "WebRTC", url: `${baseUrlTech}/webrtc.svg` },
+      { name: "Redux", url: `${baseUrlTech}/redux.svg` },
+      { name: "MaterialUI", url: `${baseUrlTech}/mui.png` },
+      { name: "Framer Motion", url: `${baseUrlTech}/framer-motion.svg` },
+      { name: "Radix UI", url: `${baseUrlTech}/radix-ui.svg` },
     ],
     capabilities: [
-      { text: 'Developing modern web applications with React, Next.js, and TypeScript', icon: '💻' },
-      { text: 'Building robust backend services with Node.js and NestJS', icon: '⚙️' },
-      { text: 'Creating cross-platform mobile applications using Expo and React Native', icon: '📱' }
+      { text: 'Building high-performance UI components with React, Next.js, and TypeScript', icon: '💻' },
+      { text: 'Optimizing frontend performance by 30% and reducing API latency by 20%', icon: '⚡' },
+      { text: 'Creating responsive, cross-platform interfaces with modern CSS frameworks', icon: '📱' }
     ]
   },
   {
-    name: "Cloud Architecture & Database Management",
-    image: "/assets/images/statics.svg",
+    name: "Backend Integration & APIs",
+    image: "/assets/images/backend-api.svg",
     tech: [
-      { name: "AWS", url: `${baseUrlTech}/aws.svg` },
-      { name: "Firebase", url: `${baseUrlTech}/firebase.svg` },
+      { name: "Node JS", url: `${baseUrlTech}/nodejs.svg` },
       { name: "MongoDB", url: `${baseUrlTech}/mongodb.svg` },
-      { name: "Postgres", url: `${baseUrlTech}/postgresql.svg` },
-      { name: "Redis", url: `${baseUrlTech}/redis.png` },
-      { name: "Vercel", url: `${baseUrlTech}/vercel.svg` },
-      { name: "Cloudinary", url: `${baseUrlTech}/cloudinary.png` },
-      { name: "Nginx", url: `${baseUrlTech}/nginx.svg` },
-    ],
-    capabilities: [
-      { text: 'Designing scalable cloud infrastructure and database architectures', icon: '☁️' },
-      { text: 'Implementing caching strategies with Redis and performance optimization', icon: '⚡' },
-      { text: 'Managing data storage solutions across SQL and NoSQL databases', icon: '💾' },
-    ]
-  },
-  {
-    name: "DevOps & Quality Assurance",
-    image: "/assets/images/devops.svg",
-    tech: [
-      { name: "Docker", url: `${baseUrlTech}/docker.svg` },
-      { name: "GitHub Actions", url: `${baseUrlTech}/github-action.svg` },
-      { name: "Jest", url: `${baseUrlTech}/jest.png` },
-      { name: "ESLint", url: `${baseUrlTech}/eslint.svg` },
-      { name: "Prettier", url: `${baseUrlTech}/prettier.svg` },
-      { name: "PM2", url: `${baseUrlTech}/pm2.png` },
-      { name: "Winston", url: `${baseUrlTech}/winston.svg` },
+      { name: "Axios", url: `${baseUrlTech}/axios.svg` },
+      { name: "React Query", url: `${baseUrlTech}/react-query.svg` },
+      { name: "Express", url: `${baseUrlTech}/express.svg` },
+      { name: "JWT", url: `${baseUrlTech}/jwt.svg` },
+      { name: "Firebase", url: `${baseUrlTech}/firebase.svg` },
       { name: "Postman", url: `${baseUrlTech}/postman.svg` },
     ],
     capabilities: [
-      { text: 'Implementing CI/CD pipelines with Docker and GitHub Actions', icon: '🔄' },
-      { text: 'Writing comprehensive test suites using Jest and maintaining code quality', icon: '✅' },
-      { text: 'Managing application logging, monitoring, and deployment processes', icon: '📊' },
+      { text: 'Integrating RESTful APIs with React and optimizing data flow', icon: '🔗' },
+      { text: 'Implementing secure authentication and state management solutions', icon: '🔐' },
+      { text: 'Reducing API response handling time by 25% and improving data reliability', icon: '💾' },
+    ]
+  },
+  {
+    name: "Development Tools & Blockchain",
+    image: "/assets/images/dev-tools.svg",
+    tech: [
+      { name: "GitHub", url: `${baseUrlTech}/github.svg` },
+      { name: "Jest", url: `${baseUrlTech}/jest.png` },
+      { name: "Figma", url: `${baseUrlTech}/figma-icon.svg` },
+      { name: "TypeScript", url: `${baseUrlTech}/typescript.svg` },
+      { name: "TanStack Query", url: `${baseUrlTech}/react-query.svg` },
+      { name: "Postman", url: `${baseUrlTech}/postman.svg` },
+      { name: "VSCode", url: `${baseUrlTech}/vscode.svg` },
+      { name: "ESLint", url: `${baseUrlTech}/eslint.svg` },
+    ],
+    capabilities: [
+      { text: 'Version control and collaborative development with Git and GitHub', icon: '🔄' },
+      { text: 'Building blockchain applications and NFT collections with Solidity and Web3', icon: '⛓️' },
+      { text: 'Testing applications and maintaining code quality with Jest and code reviews', icon: '✅' },
     ]
   }
 ];

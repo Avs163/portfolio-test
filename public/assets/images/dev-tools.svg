@@ -1,0 +1,63 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="90" fill="url(#toolGrad)" opacity="0.1"/>
+  
+  <!-- Terminal/IDE Window -->
+  <rect x="50" y="60" width="100" height="70" rx="6" fill="url(#toolGrad)" opacity="0.8"/>
+  <rect x="53" y="63" width="94" height="64" rx="3" fill="#1a1a1a" opacity="0.9"/>
+  
+  <!-- Terminal Header -->
+  <rect x="53" y="63" width="94" height="12" rx="3" fill="url(#toolGrad)" opacity="0.6"/>
+  <circle cx="60" cy="69" r="2" fill="#ff5f56"/>
+  <circle cx="68" cy="69" r="2" fill="#ffbd2e"/>
+  <circle cx="76" cy="69" r="2" fill="#27ca3f"/>
+  
+  <!-- Code/Terminal Lines -->
+  <rect x="58" y="82" width="30" height="2" rx="1" fill="#10b981" opacity="0.8"/>
+  <rect x="90" y="82" width="20" height="2" rx="1" fill="#14b8a6" opacity="0.6"/>
+  <rect x="58" y="88" width="45" height="2" rx="1" fill="#10b981" opacity="0.7"/>
+  <rect x="58" y="94" width="25" height="2" rx="1" fill="#059669" opacity="0.8"/>
+  <rect x="85" y="94" width="35" height="2" rx="1" fill="#14b8a6" opacity="0.5"/>
+  <rect x="58" y="100" width="40" height="2" rx="1" fill="#10b981" opacity="0.9"/>
+  <rect x="58" y="106" width="15" height="2" rx="1" fill="#14b8a6" opacity="0.7"/>
+  <rect x="58" y="112" width="50" height="2" rx="1" fill="#059669" opacity="0.6"/>
+  
+  <!-- Blockchain Elements -->
+  <rect x="25" y="140" width="12" height="12" rx="2" fill="url(#blockGrad)" opacity="0.8"/>
+  <rect x="42" y="140" width="12" height="12" rx="2" fill="url(#blockGrad)" opacity="0.8"/>
+  <rect x="59" y="140" width="12" height="12" rx="2" fill="url(#blockGrad)" opacity="0.8"/>
+  
+  <!-- Chain Links -->
+  <path d="M37 146 L42 146" stroke="url(#blockGrad)" stroke-width="3" opacity="0.6"/>
+  <path d="M54 146 L59 146" stroke="url(#blockGrad)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Tools Icons (simplified) -->
+  <circle cx="170" cy="50" r="8" fill="url(#toolGrad)" opacity="0.7"/>
+  <rect x="166" y="46" width="8" height="8" rx="1" fill="#ffffff" opacity="0.3"/>
+  
+  <circle cx="30" cy="50" r="6" fill="url(#blockGrad)" opacity="0.8"/>
+  <path d="M27 47 L33 53 M33 47 L27 53" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Git Branch Visualization -->
+  <path d="M160 140 Q170 150 180 140" stroke="url(#toolGrad)" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M160 140 L180 140" stroke="url(#toolGrad)" stroke-width="2" opacity="0.4"/>
+  <circle cx="160" cy="140" r="3" fill="url(#toolGrad)"/>
+  <circle cx="180" cy="140" r="3" fill="url(#toolGrad)"/>
+  <circle cx="175" cy="150" r="3" fill="url(#blockGrad)" opacity="0.7"/>
+  
+  <!-- Testing/Quality Indicators -->
+  <path d="M25 25 L35 35 M20 30 L25 35 L35 25" stroke="url(#blockGrad)" stroke-width="2" fill="none" opacity="0.7"/>
+  <circle cx="170" cy="25" r="5" fill="url(#toolGrad)" opacity="0.6"/>
+  <path d="M167 25 L169 27 L173 23" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+</svg>

@@ -1,10 +1,10 @@
 import { Variants } from "framer-motion";
 
 export const KEYBOARD_THEME = {
-  keyGradient: "from-purple-800 via-indigo-800 to-violet-900",
-  hoverKeyGradient: "from-purple-700 via-indigo-700 to-violet-800",
-  glowColor: "rgba(139, 92, 246, 0.5)",
-  unfocusedGlowColor: "rgba(139, 92, 246, 0.2)"
+  keyGradient: "from-green-800 via-emerald-800 to-teal-900",
+  hoverKeyGradient: "from-green-700 via-emerald-700 to-teal-800",
+  glowColor: "rgba(16, 185, 129, 0.5)",
+  unfocusedGlowColor: "rgba(16, 185, 129, 0.2)"
 };
 
 export const itemVariants: Variants = {
@@ -193,7 +193,7 @@ export const timelineLineVariants: Variants = {
 export const cardVariants: Variants = {
   hidden: (isEven: boolean) => ({ opacity: 0, y: 60, x: isEven ? -60 : 60, scale: 0.96 }),
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { type: "spring", stiffness: 110, damping: 15 } },
-  hover: { scale: 1.025, boxShadow: "0 6px 48px 0 #9b87f522" }
+  hover: { scale: 1.025, boxShadow: "0 6px 48px 0 #10b98122" }
 };
 
 export const cardGlowVariants = {

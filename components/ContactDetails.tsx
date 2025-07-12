@@ -20,12 +20,12 @@ const ContactDetails = () => {
                     variants={imageVariants}
                     className="relative w-[350px] h-[350px] flex items-center justify-center"
                 >
-                    <div className="absolute w-[300px] h-[300px] rounded-full bg-purple-500/20 ring-4 ring-purple-500/20"></div>
+                    <div className="absolute w-[300px] h-[300px] rounded-full bg-green-500/20 ring-4 ring-green-500/20"></div>
 
-                    <div className="relative w-[490px] h-[490px] mt-[49px]">
+                    <div className="relative w-[400px] h-[400px]">
                         <Image
-                            src="/assets/avatar.png"
-                            alt="Profile photo"
+                            src="/assets/girl-contact.svg"
+                            alt="Professional contact illustration"
                             fill
                             className="object-contain"
                             sizes="(max-width: 768px) 100vw, 350px"
@@ -43,7 +43,7 @@ const ContactDetails = () => {
                     <SocialLinks />
                     <Link href="/resume" passHref>
                     <motion.div variants={buttonVariants} whileHover={buttonHover}>
-                        <Button className="inline-flex bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white transition-colors duration-300 w-full sm:py-3 px-6 relative overflow-hidden group">
+                        <Button className="inline-flex bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white transition-colors duration-300 w-full sm:py-3 px-6 relative overflow-hidden group">
                             <span className="relative z-10">View My Resume</span>
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                         </Button>

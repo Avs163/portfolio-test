@@ -148,17 +148,17 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
                     damping: 20,
                 }}
             >
-                <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 absolute left-0 rounded-full bg-zinc-800/80 backdrop-blur-sm flex items-center justify-center border-2 border-violet-500/40 shadow-lg shadow-violet-500/20">
+                <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 absolute left-0 rounded-full bg-zinc-800/80 backdrop-blur-sm flex items-center justify-center border-2 border-green-500/40 shadow-lg shadow-green-500/20">
                     <motion.div
-                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-full bg-gradient-to-br from-violet-600/50 to-indigo-600/50 flex items-center justify-center text-sm sm:text-lg md:text-xl font-bold text-violet-100"
+                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-full bg-gradient-to-br from-green-600/50 to-emerald-600/50 flex items-center justify-center text-sm sm:text-lg md:text-xl font-bold text-green-100"
                         initial={{ scale: 0.8, rotate: -10 }}
                         animate={{
                             scale: [1, 1.08, 1],
                             rotate: [-5, 5, -5],
                             boxShadow: [
-                                "0 0 0 rgba(139, 92, 246, 0)",
-                                "0 0 15px rgba(139, 92, 246, 0.4)",
-                                "0 0 0 rgba(139, 92, 246, 0)",
+                                "0 0 0 rgba(16, 185, 129, 0)",
+                                "0 0 15px rgba(16, 185, 129, 0.4)",
+                                "0 0 0 rgba(16, 185, 129, 0)",
                             ],
                         }}
                         transition={{
@@ -205,15 +205,15 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
                 <motion.div
                     className="bg-zinc-800/40 rounded-lg sm:rounded-xl border border-zinc-700 p-5 sm:p-7 md:p-8 backdrop-blur-sm transition-all duration-500 relative overflow-hidden"
                     animate={{
-                        borderColor: isHovered ? "rgba(139, 92, 246, 0.6)" : "rgba(63, 63, 70, 1)",
+                        borderColor: isHovered ? "rgba(16, 185, 129, 0.6)" : "rgba(63, 63, 70, 1)",
                         boxShadow: isHovered
-                            ? "0 20px 40px -20px rgba(139, 92, 246, 0.3), 0 0 20px -5px rgba(139, 92, 246, 0.2)"
+                            ? "0 20px 40px -20px rgba(16, 185, 129, 0.3), 0 0 20px -5px rgba(16, 185, 129, 0.2)"
                             : "0 10px 30px -15px rgba(2, 12, 27, 0.5)",
                     }}
                 >
                     {/* Premium background effects */}
                     <motion.div
-                        className="absolute inset-0 bg-gradient-to-br from-violet-600/15 via-indigo-600/10 to-transparent rounded-lg"
+                        className="absolute inset-0 bg-gradient-to-br from-green-600/15 via-emerald-600/10 to-transparent rounded-lg"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: isHovered ? 1 : 0 }}
                         transition={{ duration: 0.4 }}
@@ -225,7 +225,7 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
                             {[...Array(isMobile ? 8 : 6)].map((_, i) => (
                                 <motion.div
                                     key={i}
-                                    className="absolute w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-violet-400/60"
+                                    className="absolute w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-green-400/60"
                                     initial={{
                                         x: Math.random() * 100 - 50,
                                         y: Math.random() * 100 - 50,
@@ -254,7 +254,7 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
                         animate={{ opacity: isHovered ? (isMobile ? 1 : 1) : isMobile ? 0.5 : 0.3 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <div className="absolute top-0 right-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-violet-500/30 rotate-45 transform origin-bottom-left"></div>
+                        <div className="absolute top-0 right-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-green-500/30 rotate-45 transform origin-bottom-left"></div>
                     </motion.div>
 
                     {/* Mobile company title */}
@@ -291,11 +291,11 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
                             custom={2}
                             viewport={{ once: true }}
                         >
-                            <span className="text-sm sm:text-base text-violet-300 font-medium">
+                            <span className="text-sm sm:text-base text-green-300 font-medium">
                                 {entry.duration.start} - {entry.duration.end}
                             </span>
                             <span className="hidden sm:inline text-zinc-500">•</span>
-                            <span className="capitalize text-xs sm:text-sm px-2.5 sm:px-3.5 py-1 rounded-full bg-violet-500/15 text-violet-300 border border-violet-500/30 shadow-sm shadow-violet-500/10">
+                            <span className="capitalize text-xs sm:text-sm px-2.5 sm:px-3.5 py-1 rounded-full bg-green-500/15 text-green-300 border border-green-500/30 shadow-sm shadow-green-500/10">
                                 {entry.type}
                             </span>
                         </motion.div>
@@ -315,11 +315,11 @@ const TimelineCard = ({ entry, isEven, index }: TimelineCardProps) => {
 
                     {/* Enhanced animated accent line - more visible on mobile */}
                     <motion.div
-                        className="absolute bottom-0 left-0 h-0.5 sm:h-1 bg-gradient-to-r from-violet-600 via-indigo-500 to-transparent"
+                        className="absolute bottom-0 left-0 h-0.5 sm:h-1 bg-gradient-to-r from-green-600 via-emerald-500 to-transparent"
                         initial={{ width: isMobile ? "30%" : "0%" }}
                         animate={{
                             width: isHovered ? "100%" : isMobile ? "50%" : "30%",
-                            boxShadow: isHovered ? "0 0 10px rgba(139, 92, 246, 0.5)" : "none",
+                            boxShadow: isHovered ? "0 0 10px rgba(16, 185, 129, 0.5)" : "none",
                         }}
                         transition={{ duration: 0.8 }}
                     />

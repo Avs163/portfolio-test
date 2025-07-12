@@ -6,10 +6,32 @@ const nextConfig: NextConfig = {
       'three',
       '@react-three/fiber',
       '@react-three/drei',
-      '@react-pdf-viewer/core',
       'recharts',
       'three-globe'
     ],
+  },
+  webpack: (config, { isServer }) => {
+    // Handle canvas dependency for PDF viewer
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      canvas: false,
+    };
+    
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        canvas: false,
+        fs: false,
+        path: false,
+        os: false,
+      };
+    }
+    
+    // Ignore canvas in client-side bundles
+    config.externals = config.externals || [];
+    config.externals.push('canvas');
+    
+    return config;
   },
   images: {
     remotePatterns: [

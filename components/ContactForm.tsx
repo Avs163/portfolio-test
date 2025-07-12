@@ -44,16 +44,16 @@ const Contact = () => {
       <div
         className="absolute inset-0 rounded-lg opacity-10 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(88, 85, 255) 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(16, 185, 129) 1px, transparent 0)',
           backgroundSize: '24px 24px'
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20" />
       <motion.h2 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-600"
+        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-600"
       >
         Contact Me
       </motion.h2>
@@ -73,7 +73,7 @@ const Contact = () => {
             onChange={(e) => setName(e.target.value)}
             required
             placeholder="How can I address you"
-            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-purple-500 focus:ring-purple-500 transition-colors duration-300 text-sm sm:text-base"
+            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-green-500 focus:ring-green-500 transition-colors duration-300 text-sm sm:text-base"
           />
         </motion.div>
         <motion.div
@@ -91,7 +91,7 @@ const Contact = () => {
             onChange={(e) => setContactInfo(e.target.value)}
             required
             placeholder="Where can I get back to you"
-            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-purple-500 focus:ring-purple-500 transition-colors duration-300 text-sm sm:text-base"
+            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-green-500 focus:ring-green-500 transition-colors duration-300 text-sm sm:text-base"
           />
         </motion.div>
         <motion.div
@@ -109,7 +109,7 @@ const Contact = () => {
             required
             placeholder="Hello Sinan! I Want to Hire You 😊..."
             rows={4}
-            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-purple-500 focus:ring-purple-500 resize-none transition-colors duration-300 text-sm sm:text-base"
+            className="mt-1 w-full bg-gray-900/50 border-gray-800 text-gray-100 placeholder:text-gray-500 focus:border-green-500 focus:ring-green-500 resize-none transition-colors duration-300 text-sm sm:text-base"
           />
         </motion.div>
         <motion.div
@@ -119,7 +119,7 @@ const Contact = () => {
         >
           <Button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white transition-colors duration-300 py-4 sm:py-5 md:py-6 relative overflow-hidden group text-sm sm:text-base"
+            className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white transition-colors duration-300 py-4 sm:py-5 md:py-6 relative overflow-hidden group text-sm sm:text-base"
           >
             <span className="relative z-10">Send Message</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
